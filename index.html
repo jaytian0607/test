@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="example">
+        <h3><a href="http://weibo.com/u/1887140642">Jay html5 test 1</a></h3>
+
+        <div class="column1">
+            <input type="button" onclick="resetToGrayscale()" value="Grayscale" /><br />
+            <input type="button" onclick="resetToColored()" value="Colored" /><br />
+            <input type="button" onclick="reset()" value="Reset" /><br />
+            <input type="button" onclick="changeGrayValue(0.1)" value="Lighter" /><br />
+            <input type="button" onclick="changeGrayValue(-0.1)" value="Darker" /><br />
+            Red: <input type="button" onclick="changeColorValue('er', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('er', -10)" value="Less" /><br />
+            Green: <input type="button" onclick="changeColorValue('eg', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('eg', -10)" value="Less" /><br />
+            Blue: <input type="button" onclick="changeColorValue('eb', 10)" value="More" />
+            <input type="button" onclick="changeColorValue('eb', -10)" value="Less" />
+        </div>
+        <div class="column2">
+            <canvas id="panel" width="520" height="700"></canvas>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <hr style="clear:both;" />
+</body>
+</html>
